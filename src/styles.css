@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.pixie-root.pixie-root.pixie-root.pixie-root {
+  z-index: 999999 !important;
+}
+@media only screen and (min-device-width: 768px) {
+  .tiny-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+  }
+
+  .tiny-scrollbar::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+    background-color: transparent;
+  }
+
+  .tiny-scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    @apply bg-fg-base/20;
+  }
+
+  .tiny-scrollbar::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+  }
+
+  .tiny-scrollbar::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+  }
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+
+.svg-icon {
+  @apply select-none inline-block fill-current flex-shrink-0 transition-icon;
+}
+
+.cropzone:not(.moving) .cropzone-transition {
+  @apply transition-all;
+}
+
+.template-col:nth-child(6n-5) {
+    @apply col-span-2 row-span-2;
+}
+
+.template-col:nth-child(6n - 1) {
+    @apply col-span-2 row-span-2;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  border: 10px solid rgba(0, 0, 0, 0.1);
+  border-top: 10px solid #3490dc;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

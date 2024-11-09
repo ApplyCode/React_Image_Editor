@@ -1,0 +1,2491 @@
+<!DOCTYPE html>
+<html lang="en" class="adminmode">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <meta charset="utf-8" />
+    <title>eCards - eCard Widget for Websites and Apps | eCardWidget.com</title>
+
+    <script>
+      window.fwSettings = {
+        widget_id: 150000000635,
+      };
+      !(function () {
+        if ("function" != typeof window.FreshworksWidget) {
+          var n = function () {
+            n.q.push(arguments);
+          };
+          (n.q = []), (window.FreshworksWidget = n);
+        }
+      })();
+    </script>
+    <script
+      type="text/javascript"
+      src="https://widget.freshworks.com/widgets/150000000635.js"
+      async
+      defer
+    ></script>
+    <script type="text/javascript">
+      // Break out of iframes - for redirects from login iframe
+      //this.top.location !== this.location && (this.top.location = this.location);
+      try {
+        if (
+          window.parent.location.href.search(/(login|register)/i) &&
+          window.parent.location !== window.location
+        ) {
+          window.parent.location = window.location;
+        }
+      } catch (e) {
+        console.log("Break out of iframes - Cross Origin Block", e);
+      }
+    </script>
+
+    <style>
+      .card-title > a {
+        color: #428bca !important;
+      }
+    </style>
+
+    <meta property="fb:admins" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="google-site-verification" content="" />
+
+    <link
+      rel="shortcut icon"
+      href="https://ecardwidget.com/wp-content/uploads/sites/14/2020/10/cropped-cropped-churchinviter_twitter-32x32.png"
+    />
+
+    <script src="https://app.ecardwidget.com/assets/vendor/jquery-1.10.1.min.js"></script>
+    <script src="https://app.ecardwidget.com/assets/vendor/jquery-migrate-1.2.1.min.js"></script>
+    <script
+      src="https://app.ecardwidget.com/assets/vendor/js/libs/modernizr.js"
+      type="text/javascript"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://app.ecardwidget.com/assets/bootstrap/dist/js/bootstrap.min.js"
+      type="text/javascript"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://app.ecardwidget.com/assets/bootstrap/dist/css/bootstrap.min.css?test=E3F408A0-48BB-4646-B24E1C9E4251B492"
+      media="all"
+      type="text/css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://app.ecardwidget.com/assets/css/codemirror/codemirror.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    />
+    <style type="text/css">
+      #copyfrom {
+        position: absolute;
+        left: -9999px;
+      }
+
+      .white-text,
+      .white-text:active,
+      .white-text:visited,
+      .white-text:focus {
+        color: #fff !important;
+      }
+
+      .white-text:hover {
+        color: #777 !important;
+      }
+    </style>
+
+    <script type="text/javascript" id="inspectletjs">
+      window.__insp = window.__insp || [];
+      __insp.push(["wid", 446670959]);
+      (function () {
+        function ldinsp() {
+          if (typeof window.__inspld != "undefined") return;
+          window.__inspld = 1;
+          var insp = document.createElement("script");
+          insp.type = "text/javascript";
+          insp.async = true;
+          insp.id = "inspsync";
+          insp.src =
+            ("https:" == document.location.protocol ? "https" : "http") +
+            "://cdn.inspectlet.com/inspectlet.js";
+          var x = document.getElementsByTagName("script")[0];
+          x.parentNode.insertBefore(insp, x);
+        }
+        setTimeout(ldinsp, 500);
+        document.readyState != "complete"
+          ? window.attachEvent
+            ? window.attachEvent("onload", ldinsp)
+            : window.addEventListener("load", ldinsp, false)
+          : ldinsp();
+      })();
+    </script>
+
+    <link
+      href="https://app.ecardwidget.com/views/themes/ci-theme/style.css?v=19"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body class="adminmode Ecards">
+    <div class="bootstrap5">
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQE2LPEGZW"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "G-TQE2LPEGZW");
+      </script>
+
+      <!-- Google Tag Manager -->
+      <script>
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({
+            "gtm.start": new Date().getTime(),
+            event: "gtm.js",
+          });
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != "dataLayer" ? "&l=" + l : "";
+          j.async = true;
+          j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "GTM-NQQZ5GM");
+      </script>
+      <!-- End Google Tag Manager -->
+
+      <!-- Google Tag Manager (noscript) -->
+      <noscript
+        ><iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-NQQZ5GM"
+          height="0"
+          width="0"
+          style="display: none; visibility: hidden"
+        ></iframe
+      ></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
+      <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(["_setAccount", "UA-5435509-13"]);
+        _gaq.push(["_trackPageview"]);
+        (function () {
+          var ga = document.createElement("script");
+          ga.type = "text/javascript";
+          ga.async = true;
+          ga.src =
+            ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
+            ".google-analytics.com/ga.js";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(ga, s);
+        })();
+      </script>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="videoIntroModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <!-- 16:9 aspect ratio -->
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                  class="embed-responsive-item"
+                  src=""
+                  id="video"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  style="width: 100%; border: 0; height: 100%"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        #videoIntroModal .embed-responsive {
+          height: 78%;
+        }
+
+        #videoIntroModal .modal-dialog {
+          max-width: 800px;
+          margin: 30px auto;
+          width: 80% !important;
+        }
+
+        #videoIntroModal .modal-body {
+          position: relative;
+          padding: 0px;
+        }
+
+        #videoIntroModal .close {
+          position: absolute;
+          right: -30px;
+          top: 0;
+          z-index: 999;
+          font-size: 2rem;
+          font-weight: normal;
+          color: #fff;
+          opacity: 1;
+        }
+      </style>
+      <script>
+        j$ = jQuery;
+        j$(document).ready(function () {
+          // Gets the video src from the data-src on each button
+          var j$videoSrc;
+          j$(".video-btn").click(function () {
+            j$videoSrc = j$(this).attr("data-src");
+            console.log("button clicked" + j$videoSrc);
+          });
+
+          // when the modal is opened autoplay it
+          j$("#videoIntroModal").on("shown.bs.modal", function (e) {
+            console.log("modal opened" + j$videoSrc);
+            // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+            j$("#video").attr("src", j$videoSrc + "?showinfo=0&modestbranding=1&rel=0");
+          });
+
+          // stop playing the youtube video when I close the modal
+          j$("#videoIntroModal").on("hide.bs.modal", function (e) {
+            // a poor man's stop video
+            j$("#video").attr("src", j$videoSrc);
+          });
+
+          // document ready
+        });
+      </script>
+      <div class="page-wrap adminmode" id="appifyWrapStyle">
+        <div style="display: none">
+          <img
+            src="https://app.ecardwidget.com/assets/css/shareimage.jpg"
+            width="128"
+            height="128"
+          />
+        </div>
+
+        <nav class="navbar navbar-light bg-light navbar-expand-lg" style="margin-bottom: 20px">
+          <div class="container">
+            <div class="navbar-brand d-flex align-items-center">
+              <a
+                class="brand"
+                style="max-width: 232px; display: block; position: relative"
+                href="/dashboard"
+                ><img
+                  src="https://app.ecardwidget.com/assets/ecardwidgetcom/logo-948.png?v1"
+                  class="img-fluid"
+              /></a>
+            </div>
+            <button
+              type="button"
+              class="navbar-toggler"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarMain"
+              aria-controls="navbarMain"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+              <ul class="navbar-nav mb-2 mb-lg-0 me-auto nav-left">
+                <li class="nav-item">
+                  <a class="nav-link" href="/dashboard">
+                    <i class="fa-solid fa-gauge-simple-high"></i> Dashboard
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/stats">
+                    <i class="fa-solid fa-chart-simple"></i> Stats
+                  </a>
+                </li>
+
+                <link
+                  rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
+                />
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+                <script>
+                  $(document).ready(function () {
+                    $(".popup-youtube, .popup-vimeo, .popup-gmaps").magnificPopup({
+                      disableOn: 700,
+                      type: "iframe",
+                      mainClass: "mfp-fade",
+                      removalDelay: 160,
+                      preloader: false,
+                      fixedContentPos: false,
+                    });
+                  });
+                </script>
+
+                <li class="nav-item">
+                  <a
+                    class="nav-link popup-youtube"
+                    href="https://www.youtube.com/watch?v=AD6pRTsZq2Q"
+                  >
+                    <i class="fa-solid fa-circle-play"></i> Video Tour
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://ecardwidget.com/docs/" target="_blank">
+                    <i class="fa-solid fa-circle-question"></i> Help &amp; Support
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/manager/users/edit/1?settingsMode=">
+                    <i class="fa fa-cog"></i> Settings
+                  </a>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item dropdown visibility" style="text-align: left">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    id="navbarMainDropdown"
+                    data-bs-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    style="text-transform: capitalize"
+                  >
+                    <div
+                      style="
+                        display: inline-block;
+                        position: absolute;
+                        right: 8px;
+                        top: 15px;
+                        font-size: 14px;
+                        background: #bababa75;
+                        width: 22px;
+                        text-align: center;
+                        border-radius: 30px;
+                        color: #000000;
+                      "
+                    >
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    Welcome, Tim<br />
+
+                    <span class="float-end badge bg-success">Enterprise Plan</span>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarMainDropdown" style="margin: 0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="/manager/users/edit/1"
+                        ><i class="fa fa-sliders"></i> Account</a
+                      >
+                    </li>
+
+                    <li class="menu-logout-btn divider" style="border-top: 1px solid #efefef"></li>
+                    <li class="nav-item">
+                      <a class="nav-link menu-logout-btn" href="/manager/users/logout"
+                        ><i class="fa-solid fa-right-from-bracket"></i> Logout</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="container">
+          <div class="alert alert-success" style="font-weight: 600">
+            Your account is connected to Shopify.
+            <a href="https://appify.ecardwidget.com/d/widget/5327/ecard">Click here</a> to manage
+            your Shopify ecards.
+          </div>
+        </div>
+
+        <style>
+          .main-container.heads-up {
+            padding: 0px !important;
+          }
+
+          .main-container {
+            background: none;
+          }
+        </style>
+
+        <!-- test -->
+
+        <!-- CSS Libs
+<link href="&#x2f;assets&#x2f;vendor&#x2f;css&#x2f;plugins&#x2f;lightbox&#x2f;lightbox.css" media="all" rel="stylesheet" type="text&#x2f;css">
+<link href="&#x2f;assets&#x2f;vendor&#x2f;nestedSortable&#x2f;nestedSortable.css" media="all" rel="stylesheet" type="text&#x2f;css">
+-->
+
+        <script>
+          $("[data-bs-toggle=popover]").on("shown.bs.popover", function () {
+            $(".popover").css("bottom", parseInt($(".popover").css("bottom")) + 22 + "px");
+          });
+        </script>
+
+        <!-- JS Libs
+<script src="&#x2f;assets&#x2f;js&#x2f;utilities.js" type="text&#x2f;javascript"></script>
+<script src="&#x2f;assets&#x2f;vendor&#x2f;js&#x2f;plugins&#x2f;lightbox&#x2f;lightbox-2.6.min.js" type="text&#x2f;javascript"></script>
+<script src="&#x2f;assets&#x2f;vendor&#x2f;ckeditor&#x2f;ckeditor.js" type="text&#x2f;javascript"></script>
+<script src="&#x2f;assets&#x2f;vendor&#x2f;tmpl.js" type="text&#x2f;javascript"></script>
+<script src="&#x2f;assets&#x2f;vendor&#x2f;serializeAnything.jquery.js" type="text&#x2f;javascript"></script>
+<script src="&#x2f;assets&#x2f;vendor&#x2f;nestedSortable&#x2f;jquery-ui-1.10.3.custom.min.js" type="text&#x2f;javascript"></script>
+<script src="&#x2f;assets&#x2f;vendor&#x2f;nestedSortable&#x2f;jquery.ui.touch-punch.min.js" type="text&#x2f;javascript"></script>
+<script src="&#x2f;assets&#x2f;vendor&#x2f;nestedSortable&#x2f;jquery.mjs.nestedSortable2.js" type="text&#x2f;javascript"></script>
+<script src="&#x2f;assets&#x2f;vendor&#x2f;js&#x2f;plugins&#x2f;fileupload&#x2f;bootstrap-fileupload.js" type="text&#x2f;javascript"></script>
+<script src="&#x2f;assets&#x2f;vendor&#x2f;jquery.responsivetable.min.js" type="text&#x2f;javascript"></script>
+<script src="&#x2f;assets&#x2f;vendor&#x2f;underscore.js" type="text&#x2f;javascript"></script>
+-->
+
+        <script
+          src="https://app.ecardwidget.com/views/layouts/admin/assets/js/shared.js?v3713"
+          type="text/javascript"
+        ></script>
+        <!-- IE8 support of media queries and CSS 2/3 selectors -->
+        <!--[if lt IE 9]>
+          <script
+            src="&#x2f;assets&#x2f;vendor&#x2f;js&#x2f;libs&#x2f;respond.min.js"
+            type="text&#x2f;javascript"
+          ></script>
+          <script
+            src="&#x2f;assets&#x2f;vendor&#x2f;js&#x2f;libs&#x2f;selectivizr.js"
+            type="text&#x2f;javascript"
+          ></script>
+        <![endif]-->
+
+        <!-- test -->
+        <div id="wrapper" class="admin-content bootstrap5">
+          <!-- Main page container -->
+          <section class="container" role="main">
+            <!-- Grid row -->
+            <div class="row contentwrapper">
+              <!-- Data block -->
+              <div class="col-sm-12">
+                <div class="data-block">
+                  <section>
+                    <article class="page-content-full">
+                      <div id="ribbon">
+                        <div id="rtop">
+                          <div id="locale">
+                            <h1>eCards</h1>
+                            <h2>
+                              <a href="/dashboard">Dashboard</a>
+
+                              > Test > eCards
+                            </h2>
+                          </div>
+                        </div>
+
+                        <div id="rmenu">
+                          <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                              <a class="nav-link active" href="/d/widget/5327/ecards"
+                                ><i class="fa fa-envelope"></i> eCards</a
+                              >
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="/preview/5327"
+                                ><i class="fa fa-share"></i> Preview & Share</a
+                              >
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="/d/widget/stylize/5327"
+                                ><i class="fa fa-asterisk"></i> Customize</a
+                              >
+                            </li>
+
+                            <li class="nav-item">
+                              <a class="nav-link" href="/stats?widgetid=5327&shownav=1"
+                                ><i class="fa fa-signal"></i> Stats</a
+                              >
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="/d/widget/email-log/5327"
+                                ><i class="fa fa-table"></i> Email Logs</a
+                              >
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="/d/widget/ecommerce/5327"
+                                ><i class="fa fa-money-bill-1-wave"></i> Ecommerce</a
+                              >
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="/d/widget/addwidget?edit=5327"
+                                ><i class="fa fa-edit"></i> Edit</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div id="content-old" class="container"></div>
+                    </article>
+
+                    <ul class="nav nav-tabs" id="myTab">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="/d/widget/5327/ecards"
+                          ><i class="fa fa-folder"></i> My eCards</a
+                        >
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="/d/widget/5327/ecards?sort"
+                          ><i class="fa fa-arrows"></i> Change Order of eCards</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/d/widget/5327/ecards/batch"
+                          ><i class="fa fa-upload"></i> Batch Upload</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/d/widget/5327/ecards/bulkupdate"
+                          ><i class="fa fa-list"></i> Bulk Update</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/d/widget/stylize/5327"
+                          ><i class="fa fa-asterisk"></i> eCard Layout</a
+                        >
+                      </li>
+                    </ul>
+                    <br />
+
+                    <style>
+                      .help-block {
+                        line-height: 21px;
+                      }
+
+                      .control-label {
+                        display: inline-block;
+                      }
+
+                      .tip-save-card {
+                        display: none;
+                      }
+
+                      ol.list-steps {
+                        padding: 0;
+                        margin: 0;
+                        counter-reset: steps;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: flex-start;
+                        position: relative;
+                        margin-top: 20px;
+                        margin-bottom: 40px;
+                      }
+
+                      ol.list-steps li {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        position: relative;
+                        color: #6c757d;
+                        flex: 1 1 100%;
+                      }
+
+                      ol.list-steps li.active {
+                        color: #212529;
+                      }
+
+                      ol.list-steps li:before {
+                        z-index: 2;
+                        counter-increment: steps;
+                        content: "";
+                        display: inline-block;
+                        background: #6c757d;
+                        color: #fff;
+                        border-radius: 50%;
+                        border: 0.5rem solid #caced1;
+                        width: 2rem;
+                        height: 2rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 0.5rem;
+                      }
+
+                      ol.list-steps li.active:before {
+                        background: #007bff;
+                        color: #fff;
+                        border: 0.3333333333rem solid #b3d7ff;
+                        -webkit-animation: pulsate 1.5s infinite ease-in-out alternate;
+                        animation: pulsate 1.5s infinite ease-in-out alternate;
+                      }
+
+                      ol.list-steps li.done:before {
+                        background: #007bff;
+                        color: #fff;
+                        border: 0.5rem solid #b3d7ff;
+                      }
+
+                      ol.list-steps li:after {
+                        position: absolute;
+                        z-index: 0;
+                        top: 0.75rem;
+                        display: block;
+                        content: "";
+                        width: 100%;
+                        height: 0.5rem;
+                        background: #caced1;
+                      }
+
+                      ol.list-steps li.active:after {
+                        background: #b3d7ff;
+                      }
+
+                      ol.list-steps li.done:after {
+                        background: #b3d7ff;
+                      }
+
+                      ol.list-steps li:first-child:after {
+                        border-top-left-radius: 0.25rem;
+                        border-bottom-left-radius: 0.25rem;
+                      }
+
+                      ol.list-steps li:last-child:after {
+                        border-top-right-radius: 0.25rem;
+                        border-bottom-right-radius: 0.25rem;
+                      }
+
+                      @-webkit-keyframes pulsate {
+                        from {
+                          transform: scale(1);
+                        }
+
+                        to {
+                          transform: scale(1.2);
+                        }
+                      }
+
+                      @keyframes pulsate {
+                        from {
+                          transform: scale(1);
+                        }
+
+                        to {
+                          transform: scale(1.2);
+                        }
+                      }
+                    </style>
+
+                    <link
+                      rel="stylesheet"
+                      href="https://app.ecardwidget.com/assets/bootstrap/dist/css/bootstrap.min.css?test=00D6FDC2-210D-4D3B-A2FF0575D20E9326A"
+                      media="all"
+                      type="text/css"
+                    />
+                    <link
+                      rel="stylesheet"
+                      href="https://app.ecardwidget.com/assets/css/codemirror/codemirror.css"
+                    />
+                    <link
+                      rel="stylesheet"
+                      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+                      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+                      crossorigin="anonymous"
+                      referrerpolicy="no-referrer"
+                    />
+                    <link
+                      href="https://app.ecardwidget.com/views/themes/ci-theme/style.css?v=4"
+                      rel="stylesheet"
+                      type="text/css"
+                    />
+                    <link
+                      rel="stylesheet"
+                      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
+                    />
+                    <link
+                      href="https://app.ecardwidget.com/assets/vendor/css/plugins/lightbox/lightbox.css"
+                      media="all"
+                      rel="stylesheet"
+                      type="text/css"
+                    />
+                    <link
+                      href="https://app.ecardwidget.com/assets/vendor/nestedSortable/nestedSortable.css"
+                      media="all"
+                      rel="stylesheet"
+                      type="text/css"
+                    />
+                    <link
+                      href="https://app.ecardwidget.com/assets/vendor/js/plugins/bootstrapSwitch/bootstrap-switch.min.css"
+                      rel="stylesheet"
+                      media="all"
+                      type="text/css"
+                    />
+
+                    <form
+                      action="/d/widget/5327/action/save?id=5327"
+                      enctype="multipart&#x2f;form-data"
+                      method="post"
+                    >
+                      <input id="_method" name="_method" type="hidden" value="post" />
+                      <input type="hidden" name="pixieConfig" />
+                      <input type="hidden" name="pixieBase64" />
+
+                      <script>
+                        window.isNew = true;
+                        window.trialMode = false;
+                        window.ecard = {
+                          filesize: "",
+                          canScheduleBak: "",
+                          ecardLink: "",
+                          predefinedSchedule: "",
+                          publishOn: "",
+                          allowExplicitTimestamps: false,
+                          og_description: "",
+                          personalMessageBox: "",
+                          filename: "",
+                          cardconfig: "",
+                          disabled: "",
+                          canSchedule: 1,
+                          videoLink: "",
+                          url_redirect_after_send: "",
+                          details: "",
+                          sortOrder: "",
+                          createdAt: "",
+                          name: "",
+                          predefinedScheduleOn: "",
+                          self_hosted_url: "",
+                          header: "You received an ecard!",
+                          widgetid: "",
+                          legacy: "",
+                          predefinedScheduleForced: "",
+                          ecardLinkAltText: "",
+                          userid: "",
+                          siteid: "",
+                          id: "",
+                          updatedat: "",
+                          og_title: "",
+                          expireOn: "",
+                          price: "",
+                          emailSubject: "[senders_name] sent you an ecard!",
+                          ownerid: "",
+                          globalized: "",
+                        };
+                      </script>
+
+                      <input id="widgetid" name="widgetid" type="hidden" value="5327" />
+
+                      <input id="isNew" name="isNew" type="hidden" value="true" />
+
+                      <div class="row">
+                        <div class="col-md-4 left-control">
+                          <input type="hidden" name="button" value="send" />
+                          <div class="accordion mb-3">
+                            <div class="card card-primary mb-1" id="section_details">
+                              <div class="card-body">
+                                <a
+                                  style="color: #5c6c76"
+                                  data-bs-toggle="collapse"
+                                  href="#details"
+                                  role="button"
+                                  aria-expanded="true"
+                                  aria-controls="details"
+                                >
+                                  <h3 style="margin: 0">
+                                    Details
+                                    <i class="fa fa-chevron-down float-end"></i>
+                                  </h3>
+                                </a>
+                                <div class="show" id="details">
+                                  <div
+                                    style="
+                                      padding-top: 15px;
+                                      border-top: 1px solid #e2e2e2;
+                                      margin-top: 15px;
+                                    "
+                                  >
+                                    <label class="form-label" for="myEcard-name">Title</label
+                                    ><input
+                                      class="form-control"
+                                      ftype=""
+                                      id="myEcard-name"
+                                      maxlength="800"
+                                      name="myEcard[name]"
+                                      placeholder=""
+                                      required
+                                      type="text"
+                                      value=""
+                                    /><span class="help-block"
+                                      >Shows up in the widget when selecting an ecard</span
+                                    >
+                                    <div class="separator"></div>
+
+                                    <label class="form-label" for="myEcard-emailSubject"
+                                      >Email Subject</label
+                                    ><input
+                                      class="form-control"
+                                      ftype=""
+                                      id="myEcard-emailSubject"
+                                      maxlength="255"
+                                      name="myEcard[emailSubject]"
+                                      placeholder=""
+                                      type="text"
+                                      value="[senders_name] sent you an ecard!"
+                                    /><span class="help-block">
+                                      <span style="font-size: 11px">
+                                        <b>Tip:</b>
+                                        Include the
+                                        <a
+                                          onclick='copyToClipboard("[senders_name]")'
+                                          class="badge bg-light"
+                                          href="javascript:void(0)"
+                                          data-bs-toggle="tooltip"
+                                          data-placement="top"
+                                          title="Copy to clipboard"
+                                        >
+                                          [senders_name]
+                                          <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                        </a>
+                                        code exactly as it is (click to copy) and it will be
+                                        replaced by the sender's name when sent. The recipient's
+                                        name is also supported:
+                                        <a
+                                          onclick='copyToClipboard("[recipients_name]")'
+                                          class="badge bg-light"
+                                          href="javascript:void(0)"
+                                          data-bs-toggle="tooltip"
+                                          data-placement="top"
+                                          title="Copy to clipboard"
+                                        >
+                                          [recipients_name]
+                                          <i class="fa fa-clipboard" aria-hidden="true"></i> </a
+                                        >. See 'Merge Tags' section below for more info.
+                                      </span></span
+                                    >
+                                    <div class="separator"></div>
+
+                                    <br />
+
+                                    <div class="radio-switch-wrap disabled_class">
+                                      <label style="display: inline-block"
+                                        >Hide this eCard from the widget</label
+                                      >
+                                      <input
+                                        data-size="mini"
+                                        name="myEcard[disabled]_temp"
+                                        value="1"
+                                        type="checkbox"
+                                        data-bs-toggle="switch"
+                                      />
+                                      <input
+                                        name="myEcard[disabled]"
+                                        value="0"
+                                        type="hidden"
+                                        class="target_val"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card card-primary mb-1" id="section_scheduling">
+                              <div class="card-body">
+                                <a
+                                  style="color: #5c6c76"
+                                  data-bs-toggle="collapse"
+                                  href="#scheduling"
+                                  role="button"
+                                  aria-expanded="false"
+                                  aria-controls="scheduling"
+                                >
+                                  <h3 style="margin: 0">
+                                    Scheduling
+                                    <i class="fa fa-chevron-down float-end"></i>
+                                  </h3>
+                                </a>
+                                <div class="collapse" id="scheduling">
+                                  <div
+                                    style="
+                                      padding-top: 15px;
+                                      border-top: 1px solid #e2e2e2;
+                                      margin-top: 15px;
+                                    "
+                                  >
+                                    <div class="radio-switch-wrap canSchedule_class">
+                                      <label style="display: inline-block"
+                                        >Enable Scheduling Option</label
+                                      >
+                                      <input
+                                        data-size="mini"
+                                        name="myEcard[canSchedule]_temp"
+                                        value="1"
+                                        type="checkbox"
+                                        data-bs-toggle="switch"
+                                        checked
+                                      />
+                                      <input
+                                        name="myEcard[canSchedule]"
+                                        value="1"
+                                        type="hidden"
+                                        class="target_val"
+                                      />
+
+                                      <span class="help-block"
+                                        >Allow Senders to Schedule eCards to be sent later</span
+                                      >
+                                    </div>
+                                    <div class="schedule-options">
+                                      <div class="radio-switch-wrap predefinedScheduleOn_class">
+                                        <label style="display: inline-block"
+                                          >Pre-Define Scheduled Time</label
+                                        >
+                                        <input
+                                          data-size="mini"
+                                          name="myEcard[predefinedScheduleOn]_temp"
+                                          value="1"
+                                          type="checkbox"
+                                          data-bs-toggle="switch"
+                                        />
+                                        <input
+                                          name="myEcard[predefinedScheduleOn]"
+                                          value="0"
+                                          type="hidden"
+                                          class="target_val"
+                                        />
+
+                                        <span class="help-block"
+                                          >When this date is past, the sender will be able to pick
+                                          their own time again.</span
+                                        >
+                                      </div>
+                                      <div class="predefined-schedule-options">
+                                        <input
+                                          class="form-control"
+                                          id="predefinedSchedule_temp"
+                                          name="predefinedSchedule_temp"
+                                          type="datetime-local"
+                                          value=""
+                                        />
+                                        <div class="separator"></div>
+                                        <input
+                                          id="predefinedSchedule"
+                                          name="myEcard[predefinedSchedule]"
+                                          value=""
+                                          type="hidden"
+                                        />
+                                        <br class="clear" />
+
+                                        <div
+                                          class="radio-switch-wrap predefinedScheduleForced_class"
+                                        >
+                                          <label style="display: inline-block"
+                                            >Force Scheduled Time</label
+                                          >
+                                          <input
+                                            data-size="mini"
+                                            name="myEcard[predefinedScheduleForced]_temp"
+                                            value="1"
+                                            type="checkbox"
+                                            data-bs-toggle="switch"
+                                          />
+                                          <input
+                                            name="myEcard[predefinedScheduleForced]"
+                                            value="0"
+                                            type="hidden"
+                                            class="target_val"
+                                          />
+
+                                          <span class="help-block"
+                                            >Sender can't disable or change scheduled time if
+                                            pre-defined time is in the future.</span
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card card-primary mb-1" id="section_redirect">
+                              <div class="card-body">
+                                <a
+                                  style="color: #5c6c76"
+                                  data-bs-toggle="collapse"
+                                  href="#redirect"
+                                  role="button"
+                                  aria-expanded="false"
+                                  aria-controls="redirect"
+                                >
+                                  <h3 style="margin: 0">
+                                    Redirect after Sending
+                                    <i class="fa fa-chevron-down float-end"></i>
+                                  </h3>
+                                </a>
+                                <div class="collapse" id="redirect">
+                                  <div
+                                    style="
+                                      padding-top: 15px;
+                                      border-top: 1px solid #e2e2e2;
+                                      margin-top: 15px;
+                                    "
+                                  >
+                                    <label class="form-label" for="myEcard-url_redirect_after_send"
+                                      >Redirect Sender to URL after Sending eCard</label
+                                    ><input
+                                      class="form-control"
+                                      ftype=""
+                                      id="myEcard-url_redirect_after_send"
+                                      maxlength="420"
+                                      name="myEcard[url_redirect_after_send]"
+                                      placeholder="https://"
+                                      type="text"
+                                      value=""
+                                    /><span class="help-block"
+                                      >Leave blank to disable redirect</span
+                                    >
+                                    <div class="separator"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card card-primary mb-1" id="section_video-link">
+                              <div class="card-body">
+                                <a
+                                  style="color: #5c6c76"
+                                  data-bs-toggle="collapse"
+                                  href="#video-link"
+                                  role="button"
+                                  aria-expanded="false"
+                                  aria-controls="video-link"
+                                >
+                                  <h3 style="margin: 0">
+                                    Video Link
+                                    <i class="fa fa-chevron-down float-end"></i>
+                                  </h3>
+                                </a>
+                                <div class="collapse" id="video-link">
+                                  <div
+                                    style="
+                                      padding-top: 15px;
+                                      border-top: 1px solid #e2e2e2;
+                                      margin-top: 15px;
+                                    "
+                                  >
+                                    <label class="form-label" for="video_link"
+                                      >Clickable Image Video Link
+                                    </label>
+                                    <span
+                                      class="fa fa-question-circle pop-67377 help-popover"
+                                      data-bs-toggle="popover"
+                                    ></span>
+                                    <script>
+                                      j$ = jQuery;
+                                      document.addEventListener(
+                                        "DOMContentLoaded",
+                                        function (event) {
+                                          j$(".pop-67377[data-bs-toggle='popover']").popover({
+                                            trigger: "click",
+                                            html: true,
+                                            content: `<p>
+          <a target='_blank' href='/widget/5327/preview/16922/undefined?recipient=Tim&name=Bob&email=&msg=Happy Birthday'>
+            <img src='https://app.ecardwidget.com/assets/img_help/video-card-example.jpg' height='150' class='img-fluid'>
+                            View Example
+          </a>
+        </p>`,
+                                            placement: "bottom",
+                                          });
+                                        }
+                                      );
+                                    </script>
+                                    <div class="input-append">
+                                      <input
+                                        class="form-control"
+                                        ftype=""
+                                        id="video_link"
+                                        maxlength="320"
+                                        name="myEcard[videoLink]"
+                                        placeholder="https://"
+                                        type="text"
+                                        value=""
+                                      />
+                                      <span class="help-block"
+                                        >Specify link URL to be directed to when a recipient clicks
+                                        on the image.</span
+                                      >
+                                    </div>
+                                    <span style="font-size: 12px"
+                                      >Here you can link the e-card image to your video host or
+                                      video landing page.<br /><br />
+                                      We recommend that you overlay your e-card design with a play
+                                      icon so recipients know to click through to a video.<br /><br />
+                                      In addition it would be good to also include a link to the
+                                      video in the body of the email.
+                                      <a
+                                        target="_blank"
+                                        href="/widget/5327/preview/16922/undefined?recipient=Tim&name=Bob&email=&msg=Happy Birthday"
+                                        >View Example</a
+                                      >
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card card-primary mb-1" id="section_fieldtexttokens">
+                              <div class="card-body">
+                                <a
+                                  style="color: #5c6c76"
+                                  data-bs-toggle="collapse"
+                                  href="#fieldtexttokens"
+                                  role="button"
+                                  aria-expanded="false"
+                                  aria-controls="fieldtexttokens"
+                                >
+                                  <h3 style="margin: 0">
+                                    Merge Tags
+                                    <i class="fa fa-chevron-down float-end"></i>
+                                  </h3>
+                                </a>
+                                <div class="collapse" id="fieldtexttokens">
+                                  <div
+                                    style="
+                                      padding-top: 15px;
+                                      border-top: 1px solid #e2e2e2;
+                                      margin-top: 15px;
+                                    "
+                                  >
+                                    <span style="font-size: 12px">
+                                      Merge Tags allow you to copy a code snippet that will
+                                      be replaced with the dynamic data when the ecard template is
+                                      sent.<br /><br />
+
+                                      For example, if your template includes "[sender_name] sent you
+                                      an ecard" and the sender's name is "Tim", then when the the
+                                      e-ecard is sent the text will say "Tim sent you an ecard".<br /><br />
+
+                                      <b
+                                        >Below are the Merge Tags available for you to use in the
+                                        Subject, Heading, and/or Body of your e-card template:<br /><br
+                                      /></b>
+                                    </span>
+                                    <table class="table table-hover table-bordered">
+                                      <tr>
+                                        <th>Name</th>
+                                        <th>Merge Tag Code</th>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          Personal Message Text<br />
+                                          <span class="help-block">
+                                            Using this merge tag will disable the standard personal
+                                            message block.
+                                          </span>
+                                        </td>
+                                        <td>
+                                          <a
+                                            onclick='copyToClipboard("[personal_message]")'
+                                            class="badge bg-light"
+                                            href="javascript:void(0)"
+                                            data-bs-toggle="tooltip"
+                                            data-placement="top"
+                                            title="Copy to clipboard"
+                                          >
+                                            [personal_message]
+                                            <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                          </a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          Formatted Personal Message Box<br />
+                                          <span class="help-block">
+                                            Using this merge tag will allow you to place the formatted
+                                            personal message box anywhere in the ecard body.
+                                          </span>
+                                        </td>
+                                        <td>
+                                          <a
+                                            onclick='copyToClipboard("[personal_message_box]")'
+                                            class="badge bg-light"
+                                            href="javascript:void(0)"
+                                            data-bs-toggle="tooltip"
+                                            data-placement="top"
+                                            title="Copy to clipboard"
+                                          >
+                                            [personal_message_box]
+                                            <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                          </a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>Sender's name</td>
+                                        <td>
+                                          <a
+                                            onclick='copyToClipboard("[senders_name]")'
+                                            class="badge bg-light"
+                                            href="javascript:void(0)"
+                                            data-bs-toggle="tooltip"
+                                            data-placement="top"
+                                            title="Copy to clipboard"
+                                          >
+                                            [senders_name]
+                                            <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                          </a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>Sender's email address</td>
+                                        <td>
+                                          <a
+                                            onclick='copyToClipboard("[senders_email]")'
+                                            class="badge bg-light"
+                                            href="javascript:void(0)"
+                                            data-bs-toggle="tooltip"
+                                            data-placement="top"
+                                            title="Copy to clipboard"
+                                          >
+                                            [senders_email]
+                                            <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                          </a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>Recipient's name</td>
+                                        <td>
+                                          <a
+                                            onclick='copyToClipboard("[recipients_name]")'
+                                            class="badge bg-light"
+                                            href="javascript:void(0)"
+                                            data-bs-toggle="tooltip"
+                                            data-placement="top"
+                                            title="Copy to clipboard"
+                                          >
+                                            [recipients_name]
+                                            <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                          </a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>Recipient's email address</td>
+                                        <td>
+                                          <a
+                                            onclick='copyToClipboard("[recipients_email]")'
+                                            class="badge bg-light"
+                                            href="javascript:void(0)"
+                                            data-bs-toggle="tooltip"
+                                            data-placement="top"
+                                            title="Copy to clipboard"
+                                          >
+                                            [recipients_email]
+                                            <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                          </a>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card card-primary mb-1" id="section_meta">
+                              <div class="card-body">
+                                <a
+                                  style="color: #5c6c76"
+                                  data-bs-toggle="collapse"
+                                  href="#meta"
+                                  role="button"
+                                  aria-expanded="false"
+                                  aria-controls="meta"
+                                >
+                                  <h3 style="margin: 0">
+                                    Meta / SEO / Social Media
+                                    <i class="fa fa-chevron-down float-end"></i>
+                                  </h3>
+                                </a>
+                                <div class="collapse" id="meta">
+                                  <div
+                                    style="
+                                      padding-top: 15px;
+                                      border-top: 1px solid #e2e2e2;
+                                      margin-top: 15px;
+                                    "
+                                  >
+                                    <label class="form-label" for="myEcard-og_title"
+                                      >Social Media Title
+                                    </label>
+                                    <span
+                                      class="fa fa-question-circle pop-56578 help-popover"
+                                      data-bs-toggle="popover"
+                                    ></span>
+                                    <script>
+                                      j$ = jQuery;
+                                      document.addEventListener(
+                                        "DOMContentLoaded",
+                                        function (event) {
+                                          j$(".pop-56578[data-bs-toggle='popover']").popover({
+                                            trigger: "click",
+                                            html: true,
+                                            content: `<p>
+                        When shared via social media, this will show in the preview.<br><br>
+                        Leaving this blank will use the ecard 'Title' field from above</p>`,
+                                            placement: "bottom",
+                                          });
+                                        }
+                                      );
+                                    </script>
+                                    <div class="input-append">
+                                      <input
+                                        class="form-control"
+                                        ftype=""
+                                        id="myEcard-og_title"
+                                        maxlength="420"
+                                        name="myEcard[og_title]"
+                                        type="text"
+                                        value=""
+                                      />
+                                    </div>
+                                    <div class="separator"></div>
+                                    <br class="clear" />
+
+                                    <label class="form-label" for="myEcard-og_description"
+                                      >Social Media / Pop-up Description
+                                    </label>
+                                    <span
+                                      class="fa fa-question-circle pop-10358 help-popover"
+                                      data-bs-toggle="popover"
+                                    ></span>
+                                    <script>
+                                      j$ = jQuery;
+                                      document.addEventListener(
+                                        "DOMContentLoaded",
+                                        function (event) {
+                                          j$(".pop-10358[data-bs-toggle='popover']").popover({
+                                            trigger: "click",
+                                            html: true,
+                                            content: `<p>When shared via social media, this will show in the preview.<br><br>
+                    When sending, this will show to the sender in the widget's popup window.<br><br>
+                    Leaving this blank will use the ecard body text instead.</p>`,
+                                            placement: "bottom",
+                                          });
+                                        }
+                                      );
+                                    </script>
+                                    <div class="input-append">
+                                      <textarea
+                                        class="form-control"
+                                        ftype=""
+                                        id="myEcard-og_description"
+                                        name="myEcard[og_description]"
+                                      ></textarea>
+                                    </div>
+                                    <div class="separator"></div>
+                                    <b>Important:</b>
+
+                                    Facebook caches the text. To clear it,
+                                    <a
+                                      href="https://developers.facebook.com/tools/debug/?q=https%3A%2F%2Fecardwidget%2Ecom%2Flive%2F5327%2Fshare%2F"
+                                      >click here</a
+                                    >
+                                    to open the debug tool, then click "Scrape again". You can
+                                    ignore the warnings.
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card card-primary mb-3">
+                            <div class="card-body">
+                              <button
+                                type="submit"
+                                name="button"
+                                value="save"
+                                class="btn btn-md btn-ci btn-primary btn-submit"
+                              >
+                                <i class="fa fa-save"></i> Save
+                              </button>
+                              <button
+                                type="submit"
+                                name="button"
+                                value="send"
+                                class="btn btn-md btn-ci btn-info btn-submit"
+                              >
+                                <i class="fa fa-envelope"></i> Save & Preview
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-8">
+                          <div class="ecard-wrapper">
+                            <input
+                              type="hidden"
+                              name="myEcard[legacy]"
+                              id="uploadmode"
+                              value="true"
+                            />
+
+                            <script src="https://app.ecardwidget.com/assets/js/jquery-ui.min.js"></script>
+
+                            <link
+                              href="https://app.ecardwidget.com/assets/js/packages/ecard-layout-editor/style.css?v=33D3E71C-EDE0-4B2E-8CBD569513026B22"
+                              rel="stylesheet"
+                              type="text/css"
+                            />
+                            <script src="https://app.ecardwidget.com/assets/js/packages/ecard-layout-editor/script.js?v=63A8FAB3-9E48-4A2C-8026C196A5E10515"></script>
+
+                            <!-- Responsive Mobile-First Email Template by Konstantin Savchenko, 2015.
+https://github.com/konsav/email-templates/  -->
+
+                            <style>
+                              /* Reset styles */
+                              body {
+                                margin: 0;
+                                padding: 0;
+                                min-width: 100%;
+                                width: 100% !important;
+                                height: 100% !important;
+                              }
+
+                              body,
+                              table,
+                              td,
+                              div,
+                              p,
+                              a {
+                                -webkit-font-smoothing: antialiased;
+                                text-size-adjust: 100%;
+                                -ms-text-size-adjust: 100%;
+                                -webkit-text-size-adjust: 100%;
+                                line-height: unset;
+                              }
+
+                              table,
+                              td {
+                                mso-table-lspace: 0pt;
+                                mso-table-rspace: 0pt;
+                                border-collapse: collapse !important;
+                                border-spacing: 0;
+                              }
+
+                              img {
+                                border: 0;
+                                line-height: 100%;
+                                outline: none;
+                                text-decoration: none;
+                                -ms-interpolation-mode: bicubic;
+                              }
+
+                              #outlook a {
+                                padding: 0;
+                              }
+
+                              .ReadMsgBody {
+                                width: 100%;
+                              }
+
+                              .ExternalClass {
+                                width: 100%;
+                              }
+
+                              .ExternalClass,
+                              .ExternalClass p,
+                              .ExternalClass span,
+                              .ExternalClass font,
+                              .ExternalClass td,
+                              .ExternalClass div {
+                                line-height: 100%;
+                              }
+
+                              /* Rounded corners for advanced mail clients only */
+                              @media all and (min-width: 650px) {
+                                .container {
+                                  border-radius: 8px;
+                                  -webkit-border-radius: 8px;
+                                  -moz-border-radius: 8px;
+                                  -khtml-border-radius: 8px;
+                                }
+
+                                .header {
+                                  border-top-left-radius: 8px;
+                                  -webkit-border-top-left-radius: 8px;
+                                  -moz-border-top-left-radius: 8px;
+                                  -khtml-border-top-left-radius: 8px;
+
+                                  border-top-right-radius: 8px;
+                                  -webkit-border-top-right-radius: 8px;
+                                  -moz-border-top-right-radius: 8px;
+                                  -khtml-border-top-right-radius: 8px;
+                                }
+                              }
+
+                              /* Set color for auto links (addresses, dates, etc.) */
+                              .ecard_body a,
+                              .ecard_body a:hover {
+                                color: #007eff;
+                              }
+
+                              .footer a,
+                              .footer a:hover {
+                                color: #007eff;
+                              }
+                            </style>
+
+                            <!-- BODY -->
+                            <!-- Set message background color (twice) and text color (twice) -->
+                            <div
+                              topmargin="0"
+                              rightmargin="0"
+                              bottommargin="0"
+                              leftmargin="0"
+                              marginwidth="0"
+                              marginheight="0"
+                              width="100%"
+                              style="
+                                border-collapse: collapse;
+                                border-spacing: 0;
+                                margin: 0;
+                                padding: 0;
+                                width: 100%;
+                                height: 100%;
+                                -webkit-font-smoothing: antialiased;
+                                text-size-adjust: 100%;
+                                -ms-text-size-adjust: 100%;
+                                -webkit-text-size-adjust: 100%;
+                                line-height: 100%;
+                                background-color: #f5f5f5;
+                                color: #2d2d2d;
+                              "
+                              bgcolor="#f5f5f5"
+                              text="#2d2d2d"
+                              class="sbg stext ecard_body"
+                            >
+                              <!-- SECTION / BACKGROUND -->
+                              <!-- Set message background color one again -->
+                              <table
+                                width="100%"
+                                align="center"
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                                style="
+                                  border-collapse: collapse;
+                                  border-spacing: 0;
+                                  margin: 0;
+                                  padding: 0;
+                                  width: 100%;
+                                "
+                                class="background"
+                              >
+                                <tr>
+                                  <td
+                                    align="center"
+                                    valign="top"
+                                    style="
+                                      border-collapse: collapse;
+                                      border-spacing: 0;
+                                      margin: 0;
+                                      padding: 0;
+                                    "
+                                    bgcolor="#f5f5f5"
+                                    class="sbg"
+                                  >
+                                    <!-- WRAPPER -->
+                                    <!-- Set wrapper width (twice) -->
+                                    <table
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      align="center"
+                                      width="650"
+                                      style="
+                                        border-collapse: collapse;
+                                        border-spacing: 0;
+                                        padding: 0;
+                                        width: inherit;
+                                        max-width: 650px;
+                                      "
+                                      class="wrapper"
+                                    >
+                                      <tr>
+                                        <td
+                                          align="center"
+                                          valign="top"
+                                          style="
+                                            border-collapse: collapse;
+                                            border-spacing: 0;
+                                            margin: 0;
+                                            padding: 0;
+                                            padding-left: 6.25%;
+                                            padding-right: 6.25%;
+                                            width: 87.5%;
+                                            padding-top: 20px;
+                                            padding-bottom: 20px;
+                                            font-family: sans-serif;
+                                          "
+                                        >
+                                          <!-- TOP -->
+                                          <!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2. URL format: http://domain.com/?utm_source=&utm_medium=email&utm_content=logo&utm_campaign= -->
+                                        </td>
+                                      </tr>
+
+                                      <!-- End of WRAPPER -->
+                                    </table>
+
+                                    <!-- WRAPPER / CONTEINER -->
+                                    <!-- Set conteiner background color -->
+                                    <table
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      align="center"
+                                      bgcolor="#ffffff"
+                                      width="650"
+                                      style="
+                                        border-collapse: collapse;
+                                        border-spacing: 0;
+                                        padding: 0;
+                                        width: inherit;
+                                        max-width: 650px;
+                                        background-color: #ffffff;
+                                      "
+                                      class="container sbgbody"
+                                    >
+                                      <!-- HEADER -->
+                                      <!-- Set text color and font family ("sans-serif" or "Georgia, serif") -->
+
+                                      <tr>
+                                        <td
+                                          align="center"
+                                          valign="top"
+                                          style="
+                                            border-collapse: collapse;
+                                            border-spacing: 0;
+                                            margin: 0;
+                                            padding: 0;
+                                            padding-left: 0;
+                                            padding-right: 0;
+                                            width: 87.5%;
+                                            font-size: 32px;
+                                            font-weight: bold;
+                                            line-height: 130%;
+                                            padding-top: 25px;
+                                            padding-bottom: 25px;
+                                            color: #2d2d2d;
+                                            font-family: sans-serif;
+                                            background: #ffffff;
+                                          "
+                                          bgcolor="#ffffff"
+                                          class="stext sbghead header"
+                                        >
+                                          <img
+                                            src="https://app.ecardwidget.com/assets/uploads/ci/5327/logo/logocopy4752.jpg"
+                                            alt="Test"
+                                            vspace="0"
+                                            hspace="0"
+                                            style="
+                                              max-height: 70px;
+                                              max-width: 100%;
+                                              height: auto;
+                                              margin: 0;
+                                              padding: 0;
+                                              outline: none;
+                                              -ms-interpolation-mode: bicubic;
+                                              border: none;
+                                              display: block;
+                                            "
+                                          />
+                                        </td>
+                                      </tr>
+
+                                      <!-- HERO IMAGE -->
+                                      <!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2 (wrapper x2). Do not set height for flexible images (including "auto"). URL format: http://domain.com/?utm_source=&utm_medium=email&utm_content={{Ìmage-Name}}&utm_campaign= -->
+                                      <tr>
+                                        <td
+                                          align="center"
+                                          valign="top"
+                                          style="
+                                            border-collapse: collapse;
+                                            border-spacing: 0;
+                                            margin: 0;
+                                            padding: 0;
+                                          "
+                                          class="hero_img"
+                                        >
+                                          <div class="img-edit">
+                                            <img
+                                              border="0"
+                                              vspace="0"
+                                              hspace="0"
+                                              src="https://app.ecardwidget.com/assets/img/new_assets/ecard_editor_intro.jpg"
+                                              alt="Please enable images to view this content"
+                                              id="imgpreview"
+                                              class="stext imgpreview"
+                                              style="
+                                                width: 100%;
+                                                max-width: 650px;
+                                                color: #2d2d2d;
+                                                font-size: 13px;
+                                                margin: 0;
+                                                padding: 0;
+                                                outline: none;
+                                                text-decoration: none;
+                                                -ms-interpolation-mode: bicubic;
+                                                border: none;
+                                                display: block;
+                                              "
+                                            />
+                                          </div>
+                                        </td>
+                                      </tr>
+
+                                      <!-- PARAGRAPH -->
+                                      <!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
+                                      <tr>
+                                        <td
+                                          valign="top"
+                                          style="
+                                            border-collapse: collapse;
+                                            border-spacing: 0;
+                                            margin: 0;
+                                            padding: 0;
+                                            padding-left: 6.25%;
+                                            padding-right: 6.25%;
+                                            width: 87.5%;
+                                            font-size: 15px;
+                                            font-weight: 400;
+                                            line-height: 160%;
+                                            padding-top: 25px;
+                                            color: #2d2d2d;
+                                            font-family: sans-serif;
+                                          "
+                                          class="paragraph stext"
+                                        >
+                                          <div class="pageblocks">
+                                            <div
+                                              class="pageblock"
+                                              rel="header"
+                                              style="
+                                                font-weight: bold;
+                                                padding: 0;
+                                                margin: 0 0 11pt 0;
+                                                line-height: 160%;
+                                                font-size: 18px;
+                                              "
+                                            >
+                                              <span>You received an ecard!</span>
+                                            </div>
+
+                                            <div
+                                              style="margin-bottom: 20px"
+                                              class="pageblock"
+                                              rel="details"
+                                            >
+                                              <span></span>
+                                            </div>
+                                          </div>
+                                        </td>
+                                      </tr>
+
+                                      <!-- LINE -->
+                                      <!-- Set line color -->
+
+                                      <!-- End of WRAPPER -->
+                                    </table>
+
+                                    <!-- WRAPPER -->
+                                    <!-- Set wrapper width (twice) -->
+                                    <table
+                                      border="0"
+                                      cellpadding="0"
+                                      cellspacing="0"
+                                      align="center"
+                                      width="100%"
+                                      style="
+                                        border-collapse: collapse;
+                                        border-spacing: 0;
+                                        padding: 0;
+                                        width: 100%;
+                                        max-width: 650px;
+                                      "
+                                      class="wrapper"
+                                    >
+                                      <!-- FOOTER -->
+                                      <!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
+                                      <tr>
+                                        <td
+                                          align="center"
+                                          valign="top"
+                                          style="
+                                            border-collapse: collapse;
+                                            border-spacing: 0;
+                                            margin: 0;
+                                            padding: 0;
+                                            padding-left: 6.25%;
+                                            padding-right: 6.25%;
+                                            width: 87.5%;
+                                            font-size: 13px;
+                                            font-weight: 400;
+                                            line-height: 150%;
+                                            padding-top: 20px;
+                                            padding-bottom: 20px;
+                                            color: #999999;
+                                            font-family: sans-serif;
+                                          "
+                                          class="footer rtl"
+                                        >
+                                          <a
+                                            style="text-decoration: none; color: black"
+                                            href="https://ecardwidget.com?eref"
+                                            >Powered by eCardWidget</a
+                                          ><br /><br />
+                                        </td>
+                                      </tr>
+
+                                      <!-- End of WRAPPER -->
+                                    </table>
+
+                                    <!-- End of SECTION / BACKGROUND -->
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <br class="clear" /><br />
+
+                      <div
+                        id="auth_modal"
+                        class="modal fade"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="auth_modal"
+                        aria-hidden="false"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content"></div>
+                        </div>
+                      </div>
+                      <script>
+                        document.addEventListener("DOMContentLoaded", function (event) {
+                          $(".authModal").click(function (e) {
+                            // already authed?
+                            if (window.authed) authCallback();
+                            // need auth?
+                            var template =
+                              '<iframe id="iframely" class="iframely" src="/api/' +
+                              $(e.currentTarget).data("route") +
+                              '?authModal=true" width="100%" frameborder="0" scrolling="no"></iframe>' +
+                              '<script type="text/javascript" src="https://app.ecardwidget.com/assets/app/vendor/resizerFinal/iframeResizer.min.js"></scr' +
+                              "ipt>" +
+                              '<script type="text/javascript">iFrameResize({ log : false, messageCallback : authCallback },"#iframely"); </scr' +
+                              "ipt>";
+                            $("#auth_modal").modal("show");
+                            if (!window.authModalShown) {
+                              $("#auth_modal .modal-content").html(template);
+                            }
+                            window.authModalShown = true;
+                          });
+                        });
+                      </script>
+
+                      <script>
+                        /// test
+                        function authCallback(data) {
+                          j$("#auth_modal").modal("hide");
+                          window.authed = true;
+                          window.mywidgetid =
+                            typeof window.mywidgetid !== "undefined"
+                              ? window.mywidgetid
+                              : data.message.widgetid;
+                          // data.message.userid
+                          console.log("authCallback", data);
+                          j$("form").attr("action", "/ecards/save/" + window.mywidgetid + "?add=1");
+                          j$("form").submit();
+                        }
+                      </script>
+
+                      <style type="text/css">
+                        textarea.details,
+                        .note-editor {
+                          font-family: Arial;
+                        }
+
+                        .hideThis {
+                          height: 1px;
+                          overflow: hidden;
+                          opacity: 0;
+                        }
+                      </style>
+
+                      <link
+                        rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-lite.min.css"
+                        integrity="sha512-ZbehZMIlGA8CTIOtdE+M81uj3mrcgyrh6ZFeG33A4FHECakGrOsTPlPQ8ijjLkxgImrdmSVUHn1j+ApjodYZow=="
+                        crossorigin="anonymous"
+                        referrerpolicy="no-referrer"
+                      />
+                      <script
+                        src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-lite.min.js"
+                        integrity="sha512-lVkQNgKabKsM1DA/qbhJRFQU8TuwkLF2vSN3iU/c7+iayKs08Y8GXqfFxxTZr1IcpMovXnf2N/ZZoMgmZep1YQ=="
+                        crossorigin="anonymous"
+                        referrerpolicy="no-referrer"
+                      ></script>
+                      <link
+                        rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs5.min.css"
+                        integrity="sha512-ngQ4IGzHQ3s/Hh8kMyG4FC74wzitukRMIcTOoKT3EyzFZCILOPF0twiXOQn75eDINUfKBYmzYn2AA8DkAk8veQ=="
+                        crossorigin="anonymous"
+                        referrerpolicy="no-referrer"
+                      />
+
+                      <script type="text/template" class="button-template">
+                                                            <div class="flex-container image-actions">
+                            <div class="flex-btn open-pixie btn btn-sm btn-primary">
+                                <div class="inner"><i class="fa-solid fa-pen-nib"></i> <span>Create a design</span></div>
+                            </div>
+                            <div style="background:#9363b0;border-color:#552c6d;" class="flex-btn switchToUpload btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-backdrop="static" data-bs-keyboard="false" data-bs-target="#uploaderModal">
+                                <div class="inner"><i class="fa fa-cloud-upload" aria-hidden="true"></i> Upload an image</div>
+                            </div>
+                            <div style="background:#529097;border-color:#2c636d;" class="flex-btn btn-sm btn btn-info" data-bs-toggle="modal" data-bs-backdrop="static" data-bs-keyboard="false" data-bs-target="#linkModal">
+                                <div class="inner"><i class="fa fa-link" aria-hidden="true"></i> Clickable image link</div>
+                            </div>
+                        </div>
+                      </script>
+
+                      <!-- Uploader Modal -->
+                      <div
+                        class="modal fade hide-modal"
+                        id="uploaderModal"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="uploaderModalLabel"
+                      >
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h4 class="modal-title" id="uploaderModalLabel">Upload Image</h4>
+                            </div>
+
+                            <div class="modal-body">
+                              <div class="self-hosted" style="display: none">
+                                <label class="control-label">URL of image hosted by you:</label>
+                                <input
+                                  style="margin: 10px 0"
+                                  placeholder="https://"
+                                  class="form-control self_hosted_url"
+                                  name="myEcard[self_hosted_url]"
+                                  value=""
+                                />
+                                <div style="margin: 10px 0">
+                                  <b>Warning:</b> If you provide an invalid URL or image format, the
+                                  image will be broken and unable to display.
+                                </div>
+                                <a href="javascript:void(0)" class="self-hosted-toggle"
+                                  >Click here to upload an image instead</a
+                                >
+                                <div
+                                  style="
+                                    padding-top: 20px;
+                                    margin-top: 20px;
+                                    border-top: 1px solid #ddd;
+                                  "
+                                >
+                                  <button
+                                    type="button"
+                                    class="btn btn-primary float-end apply-url"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    Apply
+                                  </button>
+                                  <button
+                                    type="button"
+                                    class="btn btn-light float-end"
+                                    style="margin: 0 15px"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    Cancel
+                                  </button>
+                                  <br class="clear" />
+                                </div>
+                              </div>
+                              <div class="uploader" style="">
+                                <span style="line-height: 33px">
+                                  <b>File types:</b> JPG, GIF, and PNG
+                                  <b style="display: inline-block; padding-left: 10px"
+                                    >Max filesize:</b
+                                  >
+                                  1MB<br />
+                                  <b>Image Dimensions:</b> Height and width no greater than 1500
+                                  pixels
+                                </span>
+                                <br /><br />
+                                <div class="card card-body">
+                                  <label class="btn btn-block btn-primary">
+                                    <i class="fa fa-folder-open"></i> Click here to upload your
+                                    ecard image
+                                    <input
+                                      id="inputFileToLoad"
+                                      name="legacyupload"
+                                      type="file"
+                                      style="display: none"
+                                    />
+                                  </label>
+                                  <div class="text-center">
+                                    <input type="hidden" name="ecardimg" id="ecardimg" />
+                                  </div>
+                                </div>
+                                <a href="javascript:void(0)" class="self-hosted-toggle"
+                                  >Click here to use an image hosted by you instead</a
+                                >
+                                <div
+                                  style="
+                                    padding-top: 20px;
+                                    margin-top: 20px;
+                                    border-top: 1px solid #ddd;
+                                  "
+                                >
+                                  <button
+                                    type="button"
+                                    class="btn btn-primary float-end"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    Done
+                                  </button>
+                                  <br class="clear" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Link Edit Modal -->
+                      <div
+                        class="modal fade hide-modal"
+                        id="linkModal"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="linkModalLabel"
+                      >
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h4 class="modal-title" id="linkModalLabel">
+                                Clickable eCard Image Link
+                              </h4>
+                            </div>
+                            <div class="modal-body">
+                              <span class="link help-block">
+                                <label class="form-label" for="ecard_link"
+                                  >Clickable Image Link</label
+                                ><input
+                                  class="form-control"
+                                  ftype=""
+                                  id="ecard_link"
+                                  maxlength="320"
+                                  name="myEcard[ecardLink]"
+                                  placeholder="https://"
+                                  type="text"
+                                  value=""
+                                /><span class="help-block"
+                                  >Specify link URL to be directed to when a recipient clicks on the
+                                  image.</span
+                                >
+
+                                <label class="form-label" for="myEcard-ecardLinkAltText"
+                                  >Image ALT Text</label
+                                ><input
+                                  class="form-control"
+                                  ftype=""
+                                  id="myEcard-ecardLinkAltText"
+                                  maxlength="255"
+                                  name="myEcard[ecardLinkAltText]"
+                                  placeholder="Please enable images to view this content"
+                                  type="text"
+                                  value=""
+                                /><span class="help-block"
+                                  >ALT text refers to invisible description of images which are read
+                                  aloud to blind users on a screen reader.</span
+                                >
+                              </span>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                                Done
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                    <script>
+                      j$ = jQuery;
+                      window.selfHostedMode = false;
+                      j$(() => {
+                        j$(".apply-url").click(() => {
+                          j$("#imgpreview").attr("src", j$(".self_hosted_url").val());
+                        });
+                        j$(".self-hosted-toggle").click(() => {
+                          window.selfHostedMode = !window.selfHostedMode;
+                          if (window.selfHostedMode) {
+                            j$(".self-hosted").show();
+                            j$(".uploader").hide();
+                          } else {
+                            j$(".self-hosted").hide();
+                            j$(".uploader").show();
+                          }
+                        });
+
+                        var checkSchedule = val => {
+                          if (val == 1) {
+                            j$(".schedule-options").show();
+                          } else {
+                            j$(".schedule-options").hide();
+                          }
+                        };
+                        var canSchedule = j$(".canSchedule_class input.target_val");
+                        checkSchedule(canSchedule.val());
+                        canSchedule.change(() => checkSchedule(canSchedule.val()));
+
+                        var checkPreSchedule = val => {
+                          if (val == 1) {
+                            j$(".predefined-schedule-options").show();
+                          } else {
+                            j$(".predefined-schedule-options").hide();
+                          }
+                        };
+                        var predefinedScheduleOn = j$(
+                          ".predefinedScheduleOn_class input.target_val"
+                        );
+                        checkPreSchedule(predefinedScheduleOn.val());
+                        predefinedScheduleOn.change(() =>
+                          checkPreSchedule(predefinedScheduleOn.val())
+                        );
+
+                        var dtLocalFmt = "YYYY-MM-DDTHH:mm";
+                        /////////////
+                        // On load grab target (ISO val from db), then load it into the datepicker if it exists
+                        j$(".predefinedScheduleOn_class label").append(
+                          " (" +
+                            new Date()
+                              .toLocaleTimeString("en-us", {
+                                timeZoneName: "short",
+                              })
+                              .split(" ")[2] +
+                            ")"
+                        );
+                        if (j$("#predefinedSchedule") && j$("#predefinedSchedule").val().length) {
+                          j$("#predefinedSchedule_temp").val(
+                            moment.utc(j$("#predefinedSchedule").val()).local().format(dtLocalFmt)
+                          );
+                        } else {
+                          j$("#predefinedSchedule_temp").val(moment.utc().format(dtLocalFmt));
+                        }
+                        /////////////
+                        // Each time datepicker changes, update the hidden target
+                        j$("#predefinedSchedule_temp").change(() => {
+                          j$("#predefinedSchedule").val(
+                            moment(j$("#predefinedSchedule_temp").val()).utc().format()
+                          );
+                        });
+                      });
+                    </script>
+
+                    <style>
+                      #predefinedSchedule {
+                        border: 1px solid #eee;
+                        padding: 10px;
+                      }
+                    </style>
+                  </section>
+                </div>
+              </div>
+              <!-- /Data block -->
+            </div>
+            <!-- /Grid row -->
+          </section>
+          <!-- /Main page container -->
+
+          <!-- Sticky footer push -->
+          <div id="push"></div>
+        </div>
+      </div>
+
+      <script type="text/javascript">
+        j$(document).ready(function () {
+          j$("label").addClass("control-label");
+        });
+      </script>
+      <script
+        type="text/javascript"
+        src="https://app.ecardwidget.com/assets/css/tabs/tabs.js?v1"
+      ></script>
+      <script type="text/javascript">
+        function Toggle() {
+          j$(".d").toggle();
+        }
+
+        function SelectOpt(rlName, value) {
+          j$('input[name="' + rlName + '"]').each(function () {
+            if (j$(this).val() == value) {
+              j$(this).attr("checked", true).parent().addClass("h");
+            } else {
+              j$(this).attr("checked", false).parent().removeClass("h");
+            }
+            if (value == 0) {
+              j$("#uploadimage").show(1000);
+            } else {
+              j$("#uploadimage").hide(1000);
+            }
+          });
+        }
+      </script>
+      <script
+        src="https://app.ecardwidget.com/assets/css/jquery.kolorpicker.js?v1"
+        type="text/javascript"
+      ></script>
+
+      <script type="text/javascript">
+        j$(document).ready(function () {
+          j$(".fancyframe").click(function (e) {
+            e.preventDefault();
+            var src = j$(this).attr("href");
+            j$("#iframeModal").modal("show");
+            j$("#iframeModal iframe").attr("src", src);
+            j$("#iframeModal .modal-header h3").html(j$(this).attr("title"));
+          });
+          j$("#iframeModal button").click(function () {
+            j$("#iframeModal iframe").removeAttr("src");
+          });
+        });
+      </script>
+      <div
+        id="iframeModal"
+        class="modal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="iframeModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button
+                type="button"
+                class="btn-close float-end"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+              <iframe width="100%" height="420" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="contentModal"
+        class="modal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="iframeModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button
+                type="button"
+                class="btn-close float-end"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+              <div class="content-body"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+          j$('[data-bs-toggle="tooltip"]').tooltip();
+        });
+      </script>
+
+      <script>
+        window.onMessageOriginal = function () {};
+        window.onMessageOriginal = window.iFrameResizer
+          ? window.iFrameResizer.onMessage
+          : onMessageOriginal;
+        window.iFrameResizer = {
+          onReady: function () {
+            console.log("child.onReady - apiKey: ", "1E9D6495-349C-4758-8A3D514953832BFB");
+
+            window.parentIFrame.sendMessage("1E9D6495-349C-4758-8A3D514953832BFB");
+          },
+          onMessage: function (msg) {
+            console.log("child.onMessage", msg);
+            if (msg == "logout") {
+              window.location.href = "/api/logout?wpLoggedOutMsg=true";
+            }
+            window.onMessageOriginal(msg);
+          },
+        };
+      </script>
+      <link
+        href="https://app.ecardwidget.com/assets/vendor/js/plugins/bootstrapSwitch/bootstrap-switch.min.css"
+        rel="stylesheet"
+        media="all"
+        type="text/css"
+      />
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <script src="https://app.ecardwidget.com/assets/vendor/js/plugins/bootstrapSwitch/bootstrap-switch.min.js"></script>
+      <script>
+        j$(() => {
+          j$('[data-bs-toggle="switch"]').bootstrapSwitch();
+          j$('[data-bs-toggle="switch"]').on(
+            "switchChange.bootstrapSwitch",
+            function (event, state) {
+              j$(this)
+                .parent()
+                .parent()
+                .parent()
+                .find(".target_val")
+                .val(state ? 1 : 0)
+                .trigger("change");
+            }
+          );
+        });
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/spacetime@6.14.0/builds/spacetime.min.js"></script>
+      <script>
+        j$(() => {
+          j$('[ref="spacetime"]').each((i, el) => {
+            var datetime = j$(el).attr("data-time");
+            var format = j$(el).attr("data-format");
+            var showTimezone = j$(el).attr("data-timezone") == 1;
+            j$(el).html(`
+            ${spacetime(datetime, "UTC").goto(spacetime().timezone().name).format(format)}
+            ${
+              showTimezone
+                ? new Date().toLocaleTimeString("en-us", {timeZoneName: "short"}).split(" ")[2]
+                : ""
+            }
+          `);
+            j$(el).removeAttr("ref");
+            j$(el).removeAttr("data-time");
+            j$(el).removeAttr("data-format");
+          });
+        });
+      </script>
+    </div>
+
+    <input id="copyfrom" tabindex="-1" aria-hidden="true" />
+    <script>
+      function copyToClipboard(copyText) {
+        $("#copyfrom").val(copyText);
+        var copyText = document.getElementById("copyfrom");
+        copyText.select();
+        document.execCommand("copy");
+        alert("Copied to clipboard: " + copyText.value);
+      }
+    </script>
+
+<script type="module" src="/src/main.tsx"></script>
+<div id="editor-container"></div>
+<script>
+  j$ = jQuery;
+
+  window.pexels_api_key = '563492ad6f91700001000001cdcba48e31d54c7983f88e65a692d1a6';
+
+  function resetPixie() {
+    window.newImageUpload = true;
+    window.configLoaded = false;
+    window.pixiedImage = false;
+    j$('input[name=pixieConfig],input[name=pixieBase64]').val('')
+  }
+  document.addEventListener("DOMContentLoaded", function(){
+    var timestamp = Math.floor(Date.now() / 1000)
+
+
+    window.pixie = new Pixie({
+      selector: "#editor-container",
+      baseUrl: 'https://app.ecardwidget.com/assets/ecw-apps/pixie-editor/dist-umd',
+      image: document.querySelector('#imgpreview').src,
+      onSave: function (data, name) {
+        j$('input[name=pixieConfig]').val(pixie.getState());
+        j$('input[name=pixieBase64]').val(data);
+        j$('#imgpreview').attr('src',data);
+        pixie.setConfig({ui: {visible: false}});
+      },
+      onLoad: function() {
+        // pixie.openEditorWithImage(document.querySelector('#imgpreview'));
+      },
+      ui: {
+        nav : {
+          position: 'bottom'
+        },
+        visible: false,
+        mode: 'overlay',
+        openImageDialog: false,
+      }
+    });
+
+    j$(document).on("click", ".open-pixie", function () {
+      if(window.isNew && !window.configLoaded && !window.newImageUpload) {
+        window.configLoaded = true;
+        pixie.open();
+        window.parentIFrame?.sendMessage('scrollToTop');
+        pixie.setStateFromUrl('https://app.ecardwidget.com/assets/uploads/ci/3649/ecard_12322.json?v=' + timestamp).then(function () {})
+      } else if(window.pixiedImage && !window.configLoaded) {
+        window.configLoaded = true;
+        pixie.open();
+        window.parentIFrame?.sendMessage('scrollToTop');
+        pixie.setStateFromUrl('https://app.ecardwidget.com/assets/uploads/ci/1915/ecard_.json?v=' + timestamp).then(function () {})
+      } else {
+        pixie.open();
+        window.parentIFrame?.sendMessage('scrollToTop');
+      }
+    })
+
+  })
+
+
+
+</script>
+  </body>
+</html>
+

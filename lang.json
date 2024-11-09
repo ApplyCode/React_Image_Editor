@@ -1,0 +1,387 @@
+{
+  "+0zv6g": {
+    "defaultMessage": "Image"
+  },
+  "+EGmqP": {
+    "defaultMessage": "Emboss",
+    "description": "Filter name"
+  },
+  "+bdU7f": {
+    "defaultMessage": "Corners",
+    "description": "Navbar item"
+  },
+  "+vMr4s": {
+    "defaultMessage": "Maximum file size is {number}"
+  },
+  "/4ssxy": {
+    "defaultMessage": "Brightness",
+    "description": "Filter name"
+  },
+  "/XPfp1": {
+    "defaultMessage": "Save As"
+  },
+  "17cXIV": {
+    "defaultMessage": "These file types are not allowed: {extensions}"
+  },
+  "2Hku0l": {
+    "defaultMessage": "Sticker"
+  },
+  "2PcrJ7": {
+    "defaultMessage": "Added Image"
+  },
+  "2qELFK": {
+    "defaultMessage": "red",
+    "description": "Filter options"
+  },
+  "33NkCL": {
+    "defaultMessage": "Changed Style"
+  },
+  "34ELdR": {
+    "defaultMessage": "Loading Canvas"
+  },
+  "3wuUmC": {
+    "defaultMessage": "Blend Color",
+    "description": "Filter name"
+  },
+  "47FYwb": {
+    "defaultMessage": "Cancel"
+  },
+  "4dL9o7": {
+    "defaultMessage": "Resize"
+  },
+  "4pGuOJ": {
+    "defaultMessage": "Only these file types are allowed: {extensions}"
+  },
+  "5IP7AP": {
+    "defaultMessage": "Width"
+  },
+  "5Ws83M": {
+    "defaultMessage": "Shape"
+  },
+  "7M1lRT": {
+    "defaultMessage": "Open Photo"
+  },
+  "7Vuh3m": {
+    "defaultMessage": "Brownie",
+    "description": "Filter name"
+  },
+  "7kDDgB": {
+    "defaultMessage": "Deleted object"
+  },
+  "90afbG": {
+    "defaultMessage": "blocksize",
+    "description": "Filter options"
+  },
+  "A3jj9z": {
+    "defaultMessage": "Font"
+  },
+  "AmIZUR": {
+    "defaultMessage": "Loading State"
+  },
+  "Ax70Ky": {
+    "defaultMessage": "Sepia",
+    "description": "Filter name"
+  },
+  "BQrhdi": {
+    "defaultMessage": "Gamma",
+    "description": "Filter name"
+  },
+  "CMansq": {
+    "defaultMessage": "Background color"
+  },
+  "CVm3PB": {
+    "defaultMessage": "Create New"
+  },
+  "DWgh1L": {
+    "defaultMessage": "File must be a {type}"
+  },
+  "EWw/tK": {
+    "defaultMessage": "Apply"
+  },
+  "F5usg6": {
+    "defaultMessage": "Resize",
+    "description": "Navbar item"
+  },
+  "I9oSmn": {
+    "defaultMessage": "Vintage",
+    "description": "Filter name"
+  },
+  "JSL/ji": {
+    "defaultMessage": "Added Shape"
+  },
+  "JXdbo8": {
+    "defaultMessage": "Done"
+  },
+  "Jc05Ei": {
+    "defaultMessage": "Added Drawing"
+  },
+  "LOA559": {
+    "defaultMessage": "Background Image"
+  },
+  "LaQ6Iq": {
+    "defaultMessage": "or use sample"
+  },
+  "Lg6O5a": {
+    "defaultMessage": "Cropped Image"
+  },
+  "LmfbOm": {
+    "defaultMessage": "Invert",
+    "description": "Filter name"
+  },
+  "Ln1cJu": {
+    "defaultMessage": "Merge",
+    "description": "Navbar item"
+  },
+  "N0/0z5": {
+    "defaultMessage": "Noise",
+    "description": "Filter name"
+  },
+  "OEDpaM": {
+    "defaultMessage": "Resized Image"
+  },
+  "PHutSR": {
+    "defaultMessage": "Opacity"
+  },
+  "PPBwfo": {
+    "defaultMessage": "Black & White",
+    "description": "Filter name"
+  },
+  "PfXXAT": {
+    "defaultMessage": "Beach",
+    "description": "Sticker category name"
+  },
+  "Q9iptA": {
+    "defaultMessage": "File must be one of these types: {types}"
+  },
+  "QOD43s": {
+    "defaultMessage": "blue",
+    "description": "Filter options"
+  },
+  "QYTzdT": {
+    "defaultMessage": "Applied Filters"
+  },
+  "RpVV/g": {
+    "defaultMessage": "Shapes",
+    "description": "Navbar item"
+  },
+  "SqP3AR": {
+    "defaultMessage": "Font Size"
+  },
+  "TBhTYM": {
+    "defaultMessage": "Added Text"
+  },
+  "UA9zHK": {
+    "defaultMessage": "Loaded State"
+  },
+  "UFDwMY": {
+    "defaultMessage": "brightness",
+    "description": "Filter options"
+  },
+  "VXV22v": {
+    "defaultMessage": "Blur",
+    "description": "Filter name"
+  },
+  "VzzYJk": {
+    "defaultMessage": "Create"
+  },
+  "XCd0W/": {
+    "defaultMessage": "Doodles",
+    "description": "Sticker category name"
+  },
+  "XQZA8e": {
+    "defaultMessage": "Background"
+  },
+  "aA8bDw": {
+    "defaultMessage": "Text"
+  },
+  "aBdNBx": {
+    "defaultMessage": "Draw",
+    "description": "Navbar item"
+  },
+  "aEhjYg": {
+    "defaultMessage": "Outline"
+  },
+  "agOXPD": {
+    "defaultMessage": "Size"
+  },
+  "b1UO8a": {
+    "defaultMessage": "distance",
+    "description": "Filter options"
+  },
+  "bSC4J/": {
+    "defaultMessage": "Replaced Background Image"
+  },
+  "bWw3nL": {
+    "defaultMessage": "Polaroid",
+    "description": "Filter name"
+  },
+  "baCdKH": {
+    "defaultMessage": "Filter",
+    "description": "Navbar item"
+  },
+  "biDOz4": {
+    "defaultMessage": "green",
+    "description": "Filter options"
+  },
+  "cPxU+s": {
+    "defaultMessage": "Shadow Color"
+  },
+  "cXik3L": {
+    "defaultMessage": "Merged Objects"
+  },
+  "cYfRr+": {
+    "defaultMessage": "Replace Image"
+  },
+  "djJp6c": {
+    "defaultMessage": "History"
+  },
+  "eiirdl": {
+    "defaultMessage": "Technicolor",
+    "description": "Filter name"
+  },
+  "fCGryv": {
+    "defaultMessage": "Initial"
+  },
+  "hanSko": {
+    "defaultMessage": "grayscale",
+    "description": "Filter name"
+  },
+  "hgv63I": {
+    "defaultMessage": "Added Frame"
+  },
+  "hqIEba": {
+    "defaultMessage": "Landmarks",
+    "description": "Sticker category name"
+  },
+  "i/W1yW": {
+    "defaultMessage": "Brush Color"
+  },
+  "jPQp7Q": {
+    "defaultMessage": "Drawing"
+  },
+  "jvo0vs": {
+    "defaultMessage": "Save"
+  },
+  "k1rbG0": {
+    "defaultMessage": "Outline Color"
+  },
+  "kWzXGg": {
+    "defaultMessage": "New Text"
+  },
+  "khFxHA": {
+    "defaultMessage": "Crop",
+    "description": "Navbar item"
+  },
+  "kn9SmW": {
+    "defaultMessage": "Text",
+    "description": "Navbar item"
+  },
+  "ktqcD5": {
+    "defaultMessage": "Texture"
+  },
+  "m45ghm": {
+    "defaultMessage": "Could not export canvas with external image."
+  },
+  "mcHXNc": {
+    "defaultMessage": "Stickers",
+    "description": "Navbar item"
+  },
+  "nDRMt4": {
+    "defaultMessage": "Radius"
+  },
+  "nDt4cJ": {
+    "defaultMessage": "Transportation",
+    "description": "Sticker category name"
+  },
+  "ndJMAh": {
+    "defaultMessage": "Emoticons",
+    "description": "Sticker category name"
+  },
+  "ntXTEb": {
+    "defaultMessage": "Kodachrome",
+    "description": "Filter name"
+  },
+  "nuDv1J": {
+    "defaultMessage": "Frame",
+    "description": "Navbar item"
+  },
+  "ovg8vQ": {
+    "defaultMessage": "Bubbles",
+    "description": "Sticker category name"
+  },
+  "qfw+KX": {
+    "defaultMessage": "Maintain aspect ratio"
+  },
+  "rbrahO": {
+    "defaultMessage": "Close"
+  },
+  "s3GkYx": {
+    "defaultMessage": "mode",
+    "description": "Filter options"
+  },
+  "sWVioT": {
+    "defaultMessage": "Objects"
+  },
+  "t+ijui": {
+    "defaultMessage": "Remove Color",
+    "description": "Filter name"
+  },
+  "t2y9+Z": {
+    "defaultMessage": "noise",
+    "description": "Filter options"
+  },
+  "teLZyZ": {
+    "defaultMessage": "Height"
+  },
+  "thCGjq": {
+    "defaultMessage": "Pixelate",
+    "description": "Filter name"
+  },
+  "tyl8L5": {
+    "defaultMessage": "alpha",
+    "description": "Filter options"
+  },
+  "u4jNiO": {
+    "defaultMessage": "Shadow"
+  },
+  "uHla4C": {
+    "defaultMessage": "color",
+    "description": "Filter options"
+  },
+  "uMhpKe": {
+    "defaultMessage": "Color"
+  },
+  "wFvZzh": {
+    "defaultMessage": "H",
+    "description": "Height shorthand"
+  },
+  "xDTFjk": {
+    "defaultMessage": "Added Sticker"
+  },
+  "xdfcf6": {
+    "defaultMessage": "Open a photo or design to get started"
+  },
+  "y+7ihJ": {
+    "defaultMessage": "Quality"
+  },
+  "y/FCma": {
+    "defaultMessage": "Gradient"
+  },
+  "ymTE9v": {
+    "defaultMessage": "Loading Image"
+  },
+  "zP9AYY": {
+    "defaultMessage": "Processing Image"
+  },
+  "zRkzP5": {
+    "defaultMessage": "W",
+    "description": "Width shorthand"
+  },
+  "zigryQ": {
+    "defaultMessage": "Sharpen",
+    "description": "Filter name"
+  },
+  "zjEigN": {
+    "defaultMessage": "Rounded Corner"
+  }
+}

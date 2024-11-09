@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
+  <title>Pixie Dev</title>
+</head>
+<body>
+  <style>body { font-family: sans-serif; }</style>
+  <div id="editor-container" class="h-screen"></div>
+  <script type="module" src="/src/main.tsx"></script>
+  <script>
+    // on document load
+    document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        window.pixie
+          .setStateFromUrl('https://app.ecardwidget.com/assets/uploads/user/4760/ecard/ecard_20952.json')
+          .then(function() {});
+      }, 1000);
+    });
+  </script>
+</body>
+</html>

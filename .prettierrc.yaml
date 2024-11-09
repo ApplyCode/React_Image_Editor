@@ -1,0 +1,11 @@
+arrowParens: avoid
+bracketSpacing: false
+phpVersion: "7.3"
+singleQuote: true
+
+overrides:
+  - files: "*.html"
+    options:
+      printWidth: 100
+      tabWidth: 2
+      singleQuote: false
